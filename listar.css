@@ -1,0 +1,216 @@
+:root{
+
+    --bg-segundario:#333;
+    --bg-tercero:#1f242d;
+    --main-color:#6db33f;
+    --color-second:#ec0b0b;
+    --color-tercero:#007ced;
+    --color-cuarto:#323941;
+    --color-quinto:rgb(0,255,255);
+    --text-color:#fff;
+
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background: var(--bg-tercero);
+}
+.header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 10%;
+    z-index: 100;
+    background:var(--color-cuarto);
+}
+
+.header .logo{
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.header .navlinks a{
+    margin-left: 10px;
+    padding: 8px 16px;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--text-color);
+    position: relative;
+    overflow: hidden;
+    transition: background .5s ease;
+}
+.header .navlinks a:hover{
+    background:var(--color-quinto);
+    color:var(--bg-tercero);
+}
+.header .navlinks a::before{
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--color-quinto);
+    width: 100%;
+    height: 3px;
+    opacity: 0;
+    transition: .5s ease;
+}
+.header .navlinks a:hover:before{
+   top: -4px;
+   opacity: 1;
+
+}
+.header .navlinks a::after{
+    content: '';
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    background: var(--color-quinto);
+    width: 100%;
+    height: 3px;
+    opacity: 0;
+    transition: .5s ease;
+}
+.header .navlinks a:hover:after{
+    opacity: 1;
+    bottom: -4px;
+}
+
+section{
+    min-height: 100vh;
+    padding: 11rem 10% 2rem;
+}
+
+.home{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.content-titulo{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    height: 100px;
+
+}
+.content-titulo h1{
+text-align:center;
+    font-size: 35px;
+    font-weight: 900;
+    margin-top:1rem;
+    color: var(--text-color);
+}
+
+.container-tabla{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    width: 600px;
+    background: transparent;
+    height: 400px;
+    border-radius: 2rem;
+}
+.container-tabla .nuevo{
+    font-size: 14px;
+    font-weight: 700;
+    color:var(--text-color);
+    background:var(--main-color);
+    border-radius: .4rem;
+    padding: 10px;
+    margin-top: 2rem;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 0 10px var(--main-color);
+    transition: .5s ease;
+
+}
+.container-tabla .nuevo:hover{
+    box-shadow: none;
+}
+
+
+.container-tabla table{
+    margin-top: 1.5rem;
+    border-radius: 10px;
+}
+
+ tr, td, th{
+    text-align: center;
+    padding:5px 25px;
+    font-size:13px;
+    font-weight:600;
+    color:var(--text-color);
+    border: 2px solid var(--text-color);
+
+}
+tbody th{
+    border: none;
+}
+.container-tabla table thead tr th{
+    font-size: 13px;
+    font-weight:600;
+    color: var(--text-color);
+}
+
+.opcion{
+    display:flex;
+    gap:10px;
+}
+
+.container-tabla table .btn-editar{
+    font-size: 14px;
+    color: var(--text-color);
+    background:var(--color-tercero);
+    padding: 10px 30px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px var(--color-tercero);
+    transition: .5s ease;
+    cursor: pointer;
+
+}
+.container-tabla table .btn-editar:hover{
+    box-shadow: none;
+}
+.container-tabla table .btn-eliminar{
+    font-size: 14px;
+    color: var(--text-color);
+    border-radius: 4px;
+    background: var(--color-second);
+    padding: 10px 30px;
+    box-shadow: 0 0 10px var(--color-second);
+    transition: .5s ease;
+    cursor: pointer;
+}
+.container-tabla table .btn-eliminar:hover{
+    box-shadow: none;
+}
+footer{
+    width: 100%;
+    padding: 4rem 10%;
+    background: var(--color-cuarto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    font-size: 16px;
+    color: var(--text-color);
+
+}
+

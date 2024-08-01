@@ -1,0 +1,106 @@
+:root{
+   
+    --bg-segundario:#323946;
+    --bg:#1f242d;
+    --main-color:#6db33f;
+    --color-second:#ec0b0b;
+    --color-tercero:rgb(0,255,255);
+    --text-color:#fff;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: var(--bg);
+}
+
+.formulario-contacto{
+    width: 100%;
+    min-height: 100vh;
+    padding: 11rem 10% 2rem ;
+}
+fieldset{
+    margin: auto;
+    box-shadow: 0 0 4px var(--color-tercero);
+    border: none;
+    width: 40%;
+    min-width: 400px;
+    height: auto;
+    padding: 0 1%;
+    border-radius: 10px;
+}
+fieldset legend{
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.content-input{
+    padding: 8px;
+    margin: 4px;
+    display: flex;
+    flex-direction:column ;
+    gap: 4px;
+    border: 2px solid var();
+
+}
+.content-input label{
+    font-size: 14px;
+    font-weight:600;
+    color: var(--text-color);
+}
+.content-input input{
+    color: var(--text-color);
+    padding: 8px 5px;
+    font-size: 14px;
+    background: var(--bg-segundario);
+    border-radius: 4px;
+    border: none;
+}
+.content-input input:focus{
+    outline: none;
+}
+form input[type="submit"]{
+    cursor: pointer;
+    padding: 10px 18px;
+    margin-left: 18px;
+    margin-bottom: 18px;
+    font-size: 14px;
+    color: var(--bg);
+    font-weight: 600;
+    background: var(--color-tercero);
+    border: none;
+    border-radius: 10px;
+    transition: .5s ease;
+    box-shadow: 0 0 10px var(--color-tercero);
+}
+form input[type="submit"]:hover{
+    box-shadow: none;
+}
+
+
+.green{
+    color: var(--text-color);
+    font-size: 14px;
+}
+.red{
+    color: var(--color-second);
+}
+
+@media (max-width:768px){
+    section{
+    padding:9rem 4%;
+    }
+    fieldset{
+        width: 100%;
+        min-width: 400px;
+        margin:0;
+    }
+}

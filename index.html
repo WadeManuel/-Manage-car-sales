@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head th:replace="layout/layout::head"></head>
+<body>
+<header th:replace="layout/layout::header"></header>
+<div class="container py-4">
+    <div class="card bg-light">
+        <div class="card-header" th:text="${titulo}"></div>
+        <div class="card-body">
+            <div class="jumbotron">
+                <h1 align="center">Bienvenido a la Compañia de Audi</h1><br>
+                <center><img th:src="@{/images/Compañia.jpg}" style="max-width: 50%;" alt="Spring logo" class="img-fluid"/>
+                </center>
+                <br>
+                <h2 align="center">¡Tu solución definitiva en autos audi!</h2>
+
+                <p align="justify">Nuestra plataforma ha sido diseñada pensando en ti, combinando la más avanzada
+                    tecnología con una
+                    interfaz amigable, para que puedas centrarte en lo realmente importante: hacer crecer tu
+                    negocio.</p>
+
+                <h2 align="center">¡Comienza hoy y lleva tu compra de auto al próximo nivel!</h2>
+
+                <p align="center"><a class="btn btn-lg btn-primary" th:href="@{/vendedor/listar}" role="button">Iniciar
+                    &raquo;</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<footer th:replace="layout/layout::footer"></footer>
+</body>
+</html>
