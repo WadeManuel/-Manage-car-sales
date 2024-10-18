@@ -1,7 +1,7 @@
-# -Manage-car-sales
+## -Manage-car-sales
 Creation of a computer system to manage auto sales , Made in Java framework SpringBoot
 
-##Description
+## Description
 Languages ​​used
 Html,Css,JavaScript,Java
 Tools
@@ -11,9 +11,8 @@ Technologies used
 -Spring Boot
 
 ##Author
-**Esmanuel Pileta Alayo**
-
-##See live example-
+Esmanuel Pileta Alayo**
+## See live example-
 https://github.com/WadeManuel/-Manage-car-sales.git
 
 ## Intalation
