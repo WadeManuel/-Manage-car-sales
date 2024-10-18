@@ -14,7 +14,7 @@ Technologies used
 **Esmanuel Pileta Alayo**
 
 ##See live example-
-https://wademanuel.github.io/-Manage-car-sales/
+https://github.com/WadeManuel/-Manage-car-sales.git
 
 ## Intalation
 This project does need installation
